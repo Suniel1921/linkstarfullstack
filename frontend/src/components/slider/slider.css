@@ -73,3 +73,32 @@
 
   
   
+  @media screen and (max-width: 1130px) {
+    .text p{
+      font-size: 17px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 840px) {
+    .text {
+      position: absolute;
+      top: 170px;
+      left: 42px;
+    }
+    .text p{
+      width: 100%;
+    }
+    
+  }
+  @media screen and (max-width: 670px) {
+    .text h2{
+      font-size: 22px;
+    }
+    .text {
+      position: absolute;
+      top: 89px;
+      left: 30px;
+  }
+    
+  }

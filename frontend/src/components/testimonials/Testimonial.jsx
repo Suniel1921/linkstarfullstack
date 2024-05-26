@@ -110,10 +110,11 @@ const Testimonials = () => {
         dots: true,
         infinite: true,
         speed: 1000, // Transition speed (1 second)
-        slidesToShow: 3, // Display three cards in one row
+        // slidesToShow: 3, // Display three cards in one row
         slidesToScroll: 1, // Scroll one card at a time
         autoplay: true, // Enable autoplay
         autoplaySpeed: 3000 // Autoplay speed (3 seconds)
+        
     };
 
     return (

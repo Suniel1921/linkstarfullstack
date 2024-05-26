@@ -38,6 +38,7 @@
 
 .coverBanner_para{
     font-size: 23px;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -81,6 +82,24 @@
         margin: 23px 0px 23px 0;
         width: 90%;
         text-align: center;
+    }
+    .coverBanner_para {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .coverBanner_heading {
+        font-size: 14px;
+        width: 63%;
+
+    }
+    
+}
+
+
+@media screen and (max-width: 400px) {
+    .coverBanner_heading {
+        font-size: 14px;
+        width: 100%;
     }
     
 }
