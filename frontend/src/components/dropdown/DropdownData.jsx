@@ -1,13 +1,19 @@
 import React from 'react'
 
-const DropdownData = ({heading, para}) => {
+const DropdownData = ({heading, para1, para2, para3, para4, para5, para6}) => {
   return (
     <>
-    <div className='dropdownData_component'>
+    <div className='dropdownData_component global_margin_top'>
         <div className="container">
             <div className="dropdown_content">
                 <h2>{heading}</h2>
-                <p>{para}</p>
+                <p>{para1}</p>
+                <p>{para2}</p>
+                <p>{para3}</p>
+                <p>{para4}</p>
+                <p>{para5}</p>
+                <p>{para6}</p>            
+
             </div>
         </div>
 

@@ -51,7 +51,13 @@ const Navbar = () => {
         <NavLink to='/our-company/managing-director'>Words from Managing Director</NavLink>
       </Menu.Item>
       <Menu.Item key="3">
-        <NavLink to='/our-company/executive-director'>Words from Executive Director</NavLink>
+        <NavLink to='/our-company/intl-marketing-director'>Words from Int'l Marketing Director</NavLink>
+      </Menu.Item>
+      <Menu.Item key="4">
+        <NavLink to='/our-company/marketing-officer'>Words from Marketing Officer</NavLink>
+      </Menu.Item>
+      <Menu.Item key="5">
+        <NavLink to='/our-company/general-manager'>Words from General Manager</NavLink>
       </Menu.Item>
     </Menu>
   );
@@ -59,13 +65,13 @@ const Navbar = () => {
   const procedureMenu = (
     <Menu>
       <Menu.Item key="1">
-        <NavLink to='/procedure/ceo'>Why Nepalese</NavLink>
+        <NavLink to='/procedure/why-nepalese'>Why Nepalese</NavLink>
       </Menu.Item>
       <Menu.Item key="2">
-        <NavLink to='/procedure/manager'>How its Work</NavLink>
+        <NavLink to='/procedure/how-its-work'>How its Work</NavLink>
       </Menu.Item>
       <Menu.Item key="3">
-        <NavLink to='/procedure/staff'>Required Documents</NavLink>
+        <NavLink to='/procedure/required-documents'>Required Documents</NavLink>
       </Menu.Item>
     </Menu>
   );
