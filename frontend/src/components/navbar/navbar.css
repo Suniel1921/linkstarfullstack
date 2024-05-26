@@ -24,6 +24,23 @@
     color: black;
 }
 
+.hambugerMenu{
+    font-size: 24px;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .navlinks{
+        display: none;
+    }
+    .hambugerMenu {
+        display: block;
+    }
+    
+}
+
 
 
 

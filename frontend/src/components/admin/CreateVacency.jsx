@@ -128,9 +128,10 @@ const formContainerStyle = {
   maxWidth: '400px',
   margin: 'auto',
   padding: '20px',
-  border: '1px solid #ccc',
+  // border: '1px solid #ccc',
   borderRadius: '5px',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+ 
 };
 
 const headingStyle = {

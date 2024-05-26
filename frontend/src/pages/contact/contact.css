@@ -1,3 +1,9 @@
+.contact_container{
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+
 .contact_content{
     display: grid;
     grid-template-columns: repeat(3,1fr);

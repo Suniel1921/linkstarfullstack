@@ -38,18 +38,20 @@ import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import '../navbar/navbar.css';
 import Banner from '../Banner/Banner';
+import { TbMenuDeep } from "react-icons/tb";
+
 
 const Navbar = () => {
   const ourCompanyMenu = (
     <Menu>
       <Menu.Item key="1">
-        <NavLink to='/our-company/ceo'>Words from CEO</NavLink>
+        <NavLink to='/our-company/chairperson'>Words from Chairperson</NavLink>
       </Menu.Item>
       <Menu.Item key="2">
-        <NavLink to='/our-company/manager'>Words from Manager</NavLink>
+        <NavLink to='/our-company/managing-director'>Words from Managing Director</NavLink>
       </Menu.Item>
       <Menu.Item key="3">
-        <NavLink to='/our-company/staff'>Words from Staff</NavLink>
+        <NavLink to='/our-company/executive-director'>Words from Executive Director</NavLink>
       </Menu.Item>
     </Menu>
   );
@@ -57,13 +59,13 @@ const Navbar = () => {
   const procedureMenu = (
     <Menu>
       <Menu.Item key="1">
-        <NavLink to='/procedure/ceo'>Procedure by CEO</NavLink>
+        <NavLink to='/procedure/ceo'>Why Nepalese</NavLink>
       </Menu.Item>
       <Menu.Item key="2">
-        <NavLink to='/procedure/manager'>Procedure by Manager</NavLink>
+        <NavLink to='/procedure/manager'>How its Work</NavLink>
       </Menu.Item>
       <Menu.Item key="3">
-        <NavLink to='/procedure/staff'>Procedure by Staff</NavLink>
+        <NavLink to='/procedure/staff'>Required Documents</NavLink>
       </Menu.Item>
     </Menu>
   );
@@ -96,6 +98,7 @@ const Navbar = () => {
           <li><NavLink to='/apply-now'>Apply Now</NavLink></li>
           <li><NavLink to='/vacency'>Vacency</NavLink></li>
         </ul>
+        <div className='hambugerMenu'><TbMenuDeep/></div>
       </div>
     </div>
   );

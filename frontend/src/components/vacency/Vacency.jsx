@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import '../vacency/vacency.css'
 
 const Vacency = () => {
   const [vacancies, setVacancies] = useState([]);

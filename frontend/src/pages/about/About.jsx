@@ -15,13 +15,7 @@ const About = () => {
             <h3>About Us</h3>
               <h3 className="heading">One Step To Your Future Starts Here</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi minima porro cumque quasi explicabo et exercitationem
-                nesciunt deserunt officiis labore, corporis possimus praesentium
-                ipsum dolor esse assumenda veritatis voluptates eius aut
-                aspernatur magnam reiciendis doloribus aperiam quaerat! Dolore
-                eligendi rem illo expedita modi in iure repellat, alias sit
-                accusantium adipisci.
+                Link Star Manpower Services Pvt. Ltd is a gateway between Nepalese workers and foreign emeployers. it was established on 25' September 2011. it is duly register by the Nepal Govt. License No. 1025/068/69. Its main purpose is to explore the competent expert human resource and make available in the international job market as per the requirements of the foreign employers.
               </p>
 
               <div className="aboutList">

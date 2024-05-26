@@ -123,10 +123,9 @@ const Testimonials = () => {
                     <img src="./img/testimonials.png" alt="" />
                 </div>
                 <div className="right_testimonial">
-                    <p className="title">Testimonials</p>
-                    <h3 className="secondryHeading">
-                        We Appreciate Your Feedbacks Very Much
-                    </h3>
+                   <div className="testimonialsData">
+                   <h3 className="secondryHeading">Our Happy Clients</h3>
+                      <h3>We Appreciate Your Feedbacks Very Much</h3>    </div>                 
 
 
                     <Slider {...settings}>
