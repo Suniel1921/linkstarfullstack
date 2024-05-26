@@ -1,0 +1,30 @@
+.footerContainer{
+    background-color: var(--secondaryBlueColor);
+    color: var(--textWhite);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.links li{
+    margin: 24px;
+    list-style-type: none;
+   
+}
+
+.social_media h3,p{
+    margin-bottom: 14px;
+}
+
+
+.icons{
+    display: flex;
+    gap: 2rem;
+    font-size: 24px;
+  
+}

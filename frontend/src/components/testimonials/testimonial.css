@@ -1,0 +1,14 @@
+
+  .testimonial_User{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    margin-right: 15px;
+  }
+
+
+  .testimonialsCard{
+    box-shadow: 0, 2px 3px 4px rgba(0, 0, 0, .3);
+  }
+
+

@@ -1,0 +1,39 @@
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.left_About{
+    width: 50%;
+}
+.right_About{
+    width: 50%;
+}
+
+
+
+.aboutListIcon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.about_icons{
+    padding: 14px;
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 100%;
+    background-color: var(--secondaryBlueColor);
+    color: var(--textWhite);
+}
+
+
+.aboutList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}

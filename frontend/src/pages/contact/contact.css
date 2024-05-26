@@ -1,0 +1,37 @@
+.contact_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+
+.address_container h3{
+    margin-bottom: 23px;
+}
+
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 22px;
+    margin-top: 23px;
+}
+
+.message{
+    grid-column: span 2;
+    padding: 15px 38px;
+    height: 153px;
+}
+
+
+.form input{
+    padding: 15px 38px;
+    outline: none;
+}
+
+.inqueryBtn{
+    padding: 15px 38px;
+    border: none;
+    background-color: blue;
+    color: white;
+
+}
