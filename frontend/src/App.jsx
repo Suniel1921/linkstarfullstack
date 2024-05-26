@@ -145,7 +145,6 @@ const dropdownData = [
   para4: `Interview Assessment (Screening the Suitable Candidates`,
   para5: `Interview by Experts to Shortlist. Practical Test if Required`,
   para6: `Final Interview by Employers Authorized Representative
-
   Complete Medical Examinaton
   
   Documentation & Check list (For Visa Procecssing)

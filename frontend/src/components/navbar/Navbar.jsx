@@ -81,7 +81,8 @@ const Navbar = () => {
       <div className='banner'><Banner /></div>
       <hr />
       <div className='navbar global_flex'>
-        <h3>logo</h3>
+        {/* <h3>logo</h3> */}
+        <img className='logo' src="/image/logopng.png" alt="iink star logo" />
         <ul className='navlinks'>
           <li><NavLink to='/'>Home</NavLink></li>
           <li>

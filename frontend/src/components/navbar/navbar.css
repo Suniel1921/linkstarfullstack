@@ -1,4 +1,6 @@
-
+.logo{
+    width: 5%;
+}
 .banner{
     padding: 12px;
 }
@@ -20,7 +22,7 @@
 }
 .navlinks a{
     text-decoration: none;
-    font-size: 19px;
+    font-size: 17px;
     color: black;
 }
 
