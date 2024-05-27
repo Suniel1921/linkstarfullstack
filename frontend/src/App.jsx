@@ -116,7 +116,16 @@ const dropdownData = [
   para4: `Thank You`,
   para5: `General Manager Padam Sundar Rai`
  },
-
+ {
+  path : '/our-company/BOD',
+  heading : `Word form BOD`,
+  para1: ` It is our great pleasure to introduce ourselves as one of the fast growing recruitment/manpower agency operating in Nepal.`,
+  para2: `We would like to bring it to our valued client's notice that Link Star Manpower Services Pvt. Ltd., with its competent staff member stands for quality services in order to meet required demands of the clients.`,
+  para3 : `We always consider the fact that the human potential should be utilized to the maximum extent for the betterment of the world. Hence, our priority is always to bridge up the opportunities and the human resources. In short, we undertake the responsibility to provide the right worker for the right job.`,
+  para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits`,
+  para5: `Assuring you of quality services.`,
+  para6: `ANG DAWA SHERPA`,
+ },
 
 
 
@@ -158,6 +167,20 @@ const dropdownData = [
   Mobilization (Ticketing & Immigration Clearance`
 
 },
+{
+  path : '/procedure/required-documents',
+  heading: 'Required Documents',
+  para1 : `1.DEMAND LETTER`,
+  para2: `Briefing all details regarding the categories and quantities required. Please prepare this letter in company head with complete seal and signature and attest this document first from the Chamber of Commerce and Ministry of Foreign Affairs or Nepal Embassy.`,
+  para3: `2.POWER OF ATTORNEY`,
+  para4: `Authorizing the Agent in Nepal to act on the employer's behalf. Please prepare this letter in company head with complete seal and signature and attest this document first from the "Chamber of Commerce and Industry" of the concerned country and the Nepalese Embassy.`,
+  para5: `3. COMPANY AGREEMENT`,
+  para6: `Briefing the terms and conditions applicable to both the parties. Please prepare this letter in company head with complete seal and signature and attest this document first from the "Chamber of Commerce and Industry" of the concerned country and the Nepalese Embassy.`,
+  para7: `4. GUARANTEE LETTER`,
+  para8: `Job Offer Agreement for the candidate provided by the company showing salary and other benefits including food, accommodation, transportation, leave facilities, medical facilities, insurance and air passage etc. Please prepare this letter in the company head with complete seal and signature.`,
+  para9: `5. EMPLOYMENT AGREEMENT`,
+  para10: `Providing guarantee to the Ministry of Labour, Nepal, stating that the stated workers will be working as per the attested documents provided. Please prepare this letter in the company head with complete seal and signature.`
+}
   
 
 ];
@@ -177,8 +200,8 @@ const App = () => {
           <Route path='/apply-now' element={<ApplyNow />} />
 
           {/* Render DropdownData components */}
-          {dropdownData.map(({ path, heading, para1, para2, para3, para4, para5, para6 }) => (
-            <Route key={path} path={path} element={<DropdownData heading={heading} para1={para1}  para2={para2} para3={para3} para4={para4} para5={para5} para6={para6}/>} />
+          {dropdownData.map(({ path, heading, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10 }) => (
+            <Route key={path} path={path} element={<DropdownData heading={heading} para1={para1}  para2={para2} para3={para3} para4={para4} para5={para5} para6={para6} para7={para7} para8={para8} para9={para9} para10={para10}/>} />
           ))}
 
           <Route path='/dashboard/admin' element={<AdminDashboard />}>

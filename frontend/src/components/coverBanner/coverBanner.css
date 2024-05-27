@@ -4,8 +4,9 @@
 
 .coverBanner_content {
     background-image: url('/image/b1.jpg');
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     height: 50vh;
     position: relative;
 }

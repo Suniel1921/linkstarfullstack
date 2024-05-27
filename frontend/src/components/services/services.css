@@ -51,6 +51,9 @@
     transition: all .5s ease;
     cursor: pointer;
 }
+.card_icons{
+  font-size: 33px;
+}
 
 .cardHeading{
     margin-bottom: 20px;

@@ -7,9 +7,11 @@ const WhyUs = () => {
     <div className='whyUs_container' style={{marginTop: '56px', marginBottom: '56px'}}>
         <div className="container">
             <div className="whyUs_content">
-                <h3>BRIEF COMPANY OVERVIEW</h3>
-                <p style={{marginTop: '16px', marginBottom: '16px'}}>→ Govt. Lic. No.: 1025/068/069 Govt. Regd. No.: 7923/067/068 PAN: 304581045</p>
-                <p>LINK STAR MANPOWER SERVICES PVT. LTD. is a registered recruitment agency in Nepal supplying unskilled, semi-skilled and skilled manpower to various industries in Europe, Asia & Middle East. The main industries of focus include: Hospitality, Agriculture Transportation, Construction, Manufacturing, Security and Various Others. We are glad to introduce ourselves in the field of manpower recruiting companies in Nepal with enrich experience in the local and foreign markets. We are found to be most specific and reliable with its expert team and its vision to look after why foreign employment is so vital for today's generation. Our mission is to provide our clients and candidates with the excellent recruitment services based on mutual trust and the highest professional standards driven by quality and cost consciousness.</p>
+                <h3>WHY RECRUITMENT FORM LINK STAR</h3>
+                {/* <p style={{marginTop: '16px', marginBottom: '16px'}}>→ Govt. Lic. No.: 1025/068/069 Govt. Regd. No.: 7923/067/068 PAN: 304581045</p> */}
+                
+
+                <p>Link Star Manpower Services Pvt. Ltd. It has been established since 2011, in this period of time we have sent more than 25,000 skilled, semi-skilled and no skilled (labor) workers to various countries. We believe that client satisfaction and business performance go parallel so client's satisfaction is our first priority. Improving service quality to meet customer standards is an ongoing part of our business. We use several methods to choose workers, through psychometric evaluation and testing their abilities. We follow the motto of providing our clients customized and valued service and helping them to enhance their business, as we believe capable human resource is the asset to a company. We provide a total recruitment solution from the start of recruitment to final deployment and committed for the placement of manpower at most reasonable cost and time, offering total manpower solution for the global market. We have a wide range of categorized personnel in the field of Engineering, Architecture, Construction, Information Technology, General Building Maintenance, Transportation, Hotels. Resorts, Restaurants, Hospitals, Supermarkets, Beauty Centers, Household Helpers and Security Guard.</p>
             </div>
         </div>
     </div>    

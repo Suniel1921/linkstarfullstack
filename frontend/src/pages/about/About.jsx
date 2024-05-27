@@ -66,7 +66,11 @@ const About = () => {
               </div>
             </div>
           </div>
+         <h3 style={{marginTop: '16px', marginBottom: '16px'}}>→ Govt. Lic. No.: 1025/068/069 Govt. Regd. No.: 7923/067/068 PAN: 304581045</h3>
+         <p><p>LINK STAR MANPOWER SERVICES PVT. LTD. is a registered recruitment agency in Nepal supplying unskilled, semi-skilled and skilled manpower to various industries in Europe, Asia & Middle East. The main industries of focus include: Hospitality, Agriculture Transportation, Construction, Manufacturing, Security and Various Others. We are glad to introduce ourselves in the field of manpower recruiting companies in Nepal with enrich experience in the local and foreign markets. We are found to be most specific and reliable with its expert team and its vision to look after why foreign employment is so vital for today's generation. Our mission is to provide our clients and candidates with the excellent recruitment services based on mutual trust and the highest professional standards driven by quality and cost consciousness.</p></p>
         </div>
+      </div>
+      <div>
       </div>
     </>
   );

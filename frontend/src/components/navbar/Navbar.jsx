@@ -42,6 +42,15 @@ import { TbMenuDeep } from "react-icons/tb";
 
 
 const Navbar = () => {
+
+  const openLicensePdf = () => {
+    window.open('/image/LINK-STAR-LICENSE.pdf', '_blank');
+  };
+
+ const openCompanyProfilePdf = ()=>{
+  window.open('/image/Link-Star-Brochure.pdf', '_blank')
+ }
+
   const ourCompanyMenu = (
     <Menu>
       <Menu.Item key="1">
@@ -58,6 +67,15 @@ const Navbar = () => {
       </Menu.Item>
       <Menu.Item key="5">
         <NavLink to='/our-company/general-manager'>Words from General Manager</NavLink>
+      </Menu.Item>
+      <Menu.Item key="6">
+        <NavLink to='/our-company/BOD'>Words from BOD</NavLink>
+      </Menu.Item>
+      <Menu.Item key="7">
+        <NavLink onClick={openLicensePdf}>View Company License</NavLink>
+      </Menu.Item>
+      <Menu.Item key="8">
+        <NavLink onClick={openCompanyProfilePdf}>View Company Profile</NavLink>
       </Menu.Item>
     </Menu>
   );
@@ -104,6 +122,7 @@ const Navbar = () => {
           <li><NavLink to='/contact'>Contact Us</NavLink></li>
           <li><NavLink to='/apply-now'>Apply Now</NavLink></li>
           <li><NavLink to='/vacency'>Vacency</NavLink></li>
+       
         </ul>
         <div className='hambugerMenu'><TbMenuDeep/></div>
       </div>
