@@ -1,4 +1,3 @@
-import React from 'react';
 import '../Banner/banner.css';
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -26,12 +25,25 @@ const Banner = () => {
     <>
       <div className='bannerContainer global_flex'>
         <div className='bannerDetails'>
-          <p><FaMapMarkerAlt/>samakhusi,Kathmandu,Nepal</p>
-          <p onClick={handleEmailClick}><MdEmail/> {email}</p>
-          <p onClick={handlePhoneClick}><FaPhoneAlt/> {phoneNumber}</p>
+        {/* <img className='logo' src="/image/logopng.png" alt="iink star logo" /> */}
+          {/* <p><FaMapMarkerAlt/>samakhusi,Kathmandu,Nepal</p> */}
+          <div className='locationIcon'>
+            <p className='email'><FaMapMarkerAlt/></p> 
+            <p>samakhusi,Kathmandu,Nepal</p>
+          </div>
+          <div onClick={handleEmailClick} className='locationIcon'>
+            <p className='email'><MdEmail/></p>
+            <p>{email}</p>
+          </div>
+
+          <div onClick={handlePhoneClick} className='locationIcon'> 
+            <p className='email'><FaPhoneAlt/></p>
+            <p>{phoneNumber}</p>
+          </div>
+
         </div>
         <div className='bannerWhatsapp' onClick={handleWhatsAppClick}>
-          <p><RiWhatsappFill className='whatsappIcon'/> <span>{whatsappNumber}</span></p>
+          <p><RiWhatsappFill className='whatsappIcon'/><span>{whatsappNumber}</span></p>
         </div>
       </div>
     </>

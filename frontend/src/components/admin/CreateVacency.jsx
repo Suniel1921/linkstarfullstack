@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
@@ -83,7 +83,7 @@ const CreateVacancyForm = () => {
 
   return (
     <div style={formContainerStyle}>
-      <h2 style={headingStyle}>Create Vacancy</h2>
+      <p style={headingStyle}>Create Vacancy</p>
       <form onSubmit={handleSubmit} style={formStyle}>
         <div style={inputGroupStyle}>
           <label style={labelStyle}>Position:</label>

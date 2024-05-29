@@ -12,6 +12,12 @@
     width: 50%;
 }
 
+.licensesddHeading{
+    border-radius: 1px solid blue;
+    background-color: red;
+    
+}
+
 
 
 .aboutListIcon{
@@ -37,6 +43,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
+
 
 
 

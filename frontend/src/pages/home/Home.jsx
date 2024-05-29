@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../home/home.css';
 import Slider from '../../components/slider/Slider';
 import About from '../about/About';
@@ -8,6 +8,7 @@ import Accordian from '../../components/Banner/accordian/Accordian';
 import Testimonials from '../../components/testimonials/Testimonial';
 
 const Home = () => {
+  
   return (
     <>
     <div className="home_container">

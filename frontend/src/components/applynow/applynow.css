@@ -3,6 +3,15 @@
     margin-bottom: 56px;
 }
 
+.apply_Btn{
+    padding: 15px 38px;
+    border: none;
+    background-color: #0082f1;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 
 .applynow_content{
     display: grid;

@@ -42,9 +42,10 @@
 }
 
 
-/* .active{
-  color: red !important;
-} */
+.active{
+  /* color: red !important; */
+  font-weight: bold;
+}
 
 
 .heading{

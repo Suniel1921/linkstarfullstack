@@ -45,19 +45,22 @@
 
 
 
-import React from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Home from './pages/home/Home';
 import WhyUs from './components/whyUs/WhyUs';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import Vacency from './components/vacency/Vacency';
 import AdminDashboard from './components/admin/AdminDashboard';
 import CreateVacency from './components/admin/CreateVacency';
 import DropdownData from './components/dropdown/DropdownData';
 import ApplyNow from './components/applynow/ApplyNow';
+import ContactData from './components/admin/ContactData';
+import AOS from "aos";
+import { useEffect } from 'react';
 
 // Data for DropdownData components
 const dropdownData = [
@@ -102,6 +105,7 @@ const dropdownData = [
   },
  {
   path : '/our-company/marketing-officer',
+  heading: 'Word form Marketing Officer',
   para1 : `Greetings Employers,`,
   para2: `It gives us great pleasure to introduce ourselves as a manpower recruiting expert. We are here to provide you with the best human work force. Whether our candidates have had prior overseas employment experience or are taking on their first overseas assignment, we make sure they are readily available at the most competitive pay scales while also being fully prepared to provide the highest level of efficiency. Even the constant growth of our staff and clientele cannot break our commitment to you or force us to lower our standards. Having brilliant quality, we established a prestigious reputation by offering our esteemed and respected clients complete cooperation and services swiftly, effectively and by delivering extra workers as needed by the main. When placing the employees, we always put the needs of our clients first. When needed, we used to quickly hire professionals, highly skilled workers, skilled workers, semi-skilled workers, and unskilled individuals who could speak Hindi and English.`,
   para3: `Any business day, you are welcome to get in touch with us if you have any questions about our company or our services.`,
@@ -188,6 +192,12 @@ const dropdownData = [
 
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // You can adjust the duration as needed
+  }, []); // This runs once on component mount
+
+
   return (
     <Router>
       <Routes>
@@ -196,7 +206,7 @@ const App = () => {
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
           <Route path='/why-us' element={<WhyUs />} />
-          <Route path='/vacency' element={<Vacency />} />
+          <Route path='/demands' element={<Vacency />} />
           <Route path='/apply-now' element={<ApplyNow />} />
 
           {/* Render DropdownData components */}
@@ -205,7 +215,10 @@ const App = () => {
           ))}
 
           <Route path='/dashboard/admin' element={<AdminDashboard />}>
-            <Route path='/dashboard/admin/createVacency' element={<CreateVacency />} />
+            <Route path='/dashboard/admin/createVacency' element={<CreateVacency/>} />
+            <Route path='/dashboard/admin/contactData' element={<ContactData/>} />
+
+        
           </Route>
         </Route>
       </Routes>

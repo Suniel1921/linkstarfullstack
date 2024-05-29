@@ -14,7 +14,14 @@
 .links li{
     margin: 24px;
     list-style-type: none;
+    text-decoration: none;
    
+}
+
+.links li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
 .social_media h3,p{
@@ -25,8 +32,11 @@
 .icons{
     display: flex;
     gap: 2rem;
-    font-size: 24px;
-  
+    font-size: 24px;  
+}
+
+.social_media a{
+    color: white;
 }
 
 

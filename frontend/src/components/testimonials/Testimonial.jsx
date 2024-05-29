@@ -1,108 +1,30 @@
-// import React from "react";
-// import '../testimonials/test imonial.css'
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import { Link, useNavigate } from "react-router-dom";
 
-// const Testimonials = () => {
-//   const navigate = useNavigate();
-//   const testimonials = [
-//     {
-//       text: "Nepal Tech Innovations exceeded our expectations with the website they developed for Om Shree Food . Not only is it visually stunning, but it's also user-friendly and functional. Our customers love the interface, and it has significantly improved our online presence. Thank you, Nepal Tech, for your exceptional work.",
-//       user: "User Business Name",
-//       rating: "/img/rating.png",
-//       image: "/image/b1.jpg"
-//     },
-//     {
-//       text: "Working with NepalTech was a game-changer for my business. They not only built us a powerful custom application but also provided exceptional support throughout. Their dedication and professionalism exceeded our expectations.",
-//       user: "User Business Name",
-//       rating: "./img/rating.png",
-//       image: "/image/b2.jpg"
-//     },
-//     {
-//       text: "NepalTech has been an invaluable partner for our business. From designing captivating graphics to executing effective digital marketing strategies, they've helped us achieve remarkable growth.",
-//       user: "User Business Name",
-//       rating: "./img/rating.png",
-//       image: "/image/b3.jpg"
-//     }
-//   ];
-
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 1000, // Transition speed (1 second)
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true, // Enable autoplay
-//     autoplaySpeed: 3000 // Autoplay speed (3 seconds)
-//   };
-
-//   return (
-//     <div className="container">
-//       <div className="testimonials">
-//         <div className="left_testimonial">
-//           <img src="./img/testimonials.png" alt="" />
-//         </div>
-//         <div className="right_testimonial">
-//           <p className="title">Testimonials</p>
-//           <h3 className="secondryHeading">
-//             We Appreciate Your Feedbacks Very Much
-//           </h3>
-
-//           <Slider {...settings}>
-//             {testimonials.map((testimonial, index) => (
-//               <div key={index} className="testimonialsCard">
-//                <div className="testimonials_usersDetails">
-//                 <img className="testimonial_User" src={testimonial.image} alt="" />
-//                <h2>{testimonial.user}</h2>
-//                 <Link to={'#'} target="_blank"><p>{testimonial.website}</p></Link>
-//                 <img className="rating" src={testimonial.rating} alt="" />
-//                </div>
-//                 <p>{testimonial.text}</p>
-//               </div>
-//             ))}
-//           </Slider>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Testimonials;
-
-
-
-
-
-
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../testimonials/testimonial.css'
 
 const Testimonials = () => {
-    const navigate = useNavigate();
+
     const testimonials = [
         {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam qui quasi eligendi fuga atque eaque natus minus dignissimos, nemo error, maxime.",
-            user: "User Business Name",
+            text: `"Working with LinkStar was a game-changer for our business. Their team not only delivered on their promises but went above and beyond to ensure our satisfaction. Their innovative strategies and attention to detail resulted in a remarkable improvement in our online visibility and customer engagement. We couldn't be happier with the results!"`,
+            user: "Abhay Shrestha",
             rating: "/img/rating.png",
-            image: "/image/b1.jpg"
+            image: "/image/user.jpg"
         },
         {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam qui quasi eligendi fuga atque eaque natus minus dignissimos, nemo error, maxime.",
-            user: "User Business Name",
+            text: `"LinkStar is simply outstanding! Their professionalism and expertise shone through every step of the process. They took the time to understand our unique challenges and delivered a tailored solution that perfectly aligned with our goals. Thanks to LinkStart, we've seen a significant increase in our search engine rankings and online revenue. We highly recommend their services to anyone looking to stay ahead in the digital landscape."`,
+            user: "Deepa Bhatta",
             rating: "./img/rating.png",
-            image: "/image/b2.jpg"
+            image: "/image/user.jpg"
         },
         {
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam qui quasi eligendi fuga atque eaque natus minus dignissimos, nemo error, maxime.",
-            user: "User Business Name",
+            text: `"Choosing LinkStart was one of the best decisions we made for our business. Their team's strategic approach and in-depth knowledge of digital marketing made a huge impact on our bottom line. They not only helped us reach our target audience but also provided valuable insights to optimize our online presence. With LinkStart's support, we've experienced steady growth and are excited about the future possibilities."`,
+            user: "Debraj Joshi",
             rating: "./img/rating.png",
-            image: "/image/b3.jpg"
+            image: "/image/user.jpg"
         }
     ];
 
@@ -114,19 +36,19 @@ const Testimonials = () => {
         slidesToScroll: 1, // Scroll one card at a time
         autoplay: true, // Enable autoplay
         autoplaySpeed: 3000 // Autoplay speed (3 seconds)
-        
+
     };
 
     return (
         <div className="container">
             <div className="testimonials">
-                <div className="left_testimonial">
+                {/* <div className="left_testimonial">
                     <img src="./img/testimonials.png" alt="" />
-                </div>
+                </div> */}
                 <div className="right_testimonial">
-                   <div className="testimonialsData">
-                   <h3 className="secondryHeading">Our Happy Clients</h3>
-                      <h3>We Appreciate Your Feedbacks Very Much</h3>    </div>                 
+                    <div className="testimonialsData">
+                        <h3 className="secondryHeading">Our Happy Clients</h3>
+                        <h3>We Appreciate Your Feedbacks Very Much</h3>    </div>
 
 
                     <Slider {...settings}>
@@ -136,7 +58,6 @@ const Testimonials = () => {
                                     <img className="testimonial_User" src={testimonial.image} alt="" />
                                     <div>
                                         <h2>{testimonial.user}</h2>
-                                        {/* Assuming you want to link to a website, but the website field is missing in the testimonial object */}
                                         <Link to={'#'} target="_blank"><p>{testimonial.website}</p></Link>
                                     </div>
                                     <img className="rating" src={testimonial.rating} alt="" />

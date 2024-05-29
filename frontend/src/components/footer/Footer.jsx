@@ -1,4 +1,3 @@
-import React from 'react';
 import '../footer/footer.css';
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -6,8 +5,8 @@ import { FaTwitterSquare } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-import { RiWhatsappFill } from "react-icons/ri";
-import { Link } from 'react-router-dom';
+
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,11 +17,10 @@ const Footer = () => {
           <div className='quick_link'>
             <h3>Quick Links</h3>
             <ul className='links'>
-              <li><p>About</p></li>
-              <li><p>Why Us?</p></li>
-              <li><p>How its work?</p></li>
-              <li><p>Required Document</p></li>
-              <li><p>Why Nepalese?</p></li>
+              <li><NavLink to={'/about'}>About</NavLink></li> 
+              <li><NavLink to={'/why-us'}>Why Us?</NavLink></li>              
+              <li><NavLink to={'/procedure/how-its-work'}>How its Works</NavLink></li>
+              <li><NavLink to={'/procedure/required-documents'}>Required Document</NavLink></li>
             </ul>
             
           </div>
@@ -38,11 +36,9 @@ const Footer = () => {
             <h3>Social Media</h3>
             <p>Stay connected with us through social media.</p>
             <ul className='icons'>
-            <Link to="https://www.facebook.com/linkstarmanpowerservices" target="_blank">
-      <FaSquareFacebook />
-    </Link>
-              <p><FaSquareInstagram/></p>
-              <p><FaTwitterSquare/></p>
+            <Link to="https://www.facebook.com/linkstarmanpowerservices" target="_blank"> <FaSquareFacebook /></Link>
+            <Link to="https://www.instagram.com/linkstarmanpower/" target="_blank"> <FaSquareInstagram /></Link>
+              <p><FaTwitterSquare/></p> 
               
             </ul>
           </div>
