@@ -4,7 +4,7 @@ const controller = require("../controller/fileUploadController");
 
 router.post("/uploadImg", controller.imageUpload);
 router.get("/getAllVacency", controller.getAllVacancies);
-//contact us route
+// contact us route
 router.post("/contactUs", controller.contact);
 router.get("/allContactData", controller.getAllContactData);
 

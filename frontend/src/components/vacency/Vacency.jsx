@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
-import '../vacency/vacency.css'
+import '../vacency/vacency.css';
 
 const Vacency = () => {
   const [vacancies, setVacancies] = useState([]);
@@ -16,9 +16,10 @@ const Vacency = () => {
       }
 
       const response = await axios.get(`${apiUrl}/api/v1/upload/getAllVacency`);
-      console.log(response);
+      // console.log('API response:', response);
 
       if (response.data.success) {
+        // console.log('Vacancies data:', response.data.data);
         setVacancies(response.data.data);
       } else {
         toast.error(response.data.message || 'No vacancies found');
@@ -43,7 +44,7 @@ const Vacency = () => {
   return (
     <div className='vacency_container'>
       <div className="container">
-        <div className="vacency_content">
+        <div className="vacency_content global_margin_top">
           <h1 style={headingStyle}>Current Open Vacancies</h1>
           {vacancies.length === 0 ? (
             <p>No vacancies found</p>
@@ -74,10 +75,10 @@ const Vacency = () => {
                       />
                     </td>
                     <td style={tableCellStyle}>{vacancy.position}</td>
-                    <td style={tableCellStyle}>{vacancy.vacency}</td>
+                    <td style={tableCellStyle}>{vacancy.vacancy}</td>
                     <td style={tableCellStyle}>{vacancy.salary}</td>
                     <td style={tableCellStyle}>{vacancy.food}</td>
-                    <td style={tableCellStyle}>{vacancy.accomodation}</td>
+                    <td style={tableCellStyle}>{vacancy.accommodation}</td>
                     <td style={tableCellStyle}>{vacancy.transportation}</td>
                     <td style={tableCellStyle}>{vacancy.overtime}</td>
                   </tr>
@@ -104,7 +105,7 @@ const headingStyle = {
   textAlign: 'center',
   marginBottom: '20px',
   fontSize: '24px',
-  color: '#333'
+  color: '#333',
 };
 
 const tableHeaderStyle = {

@@ -61,6 +61,7 @@ import ApplyNow from './components/applynow/ApplyNow';
 import ContactData from './components/admin/ContactData';
 import AOS from "aos";
 import { useEffect } from 'react';
+import OurBusinessPartner from './components/ourPartner/OurBusinessPartner';
 
 // Data for DropdownData components
 const dropdownData = [
@@ -72,7 +73,9 @@ const dropdownData = [
     para3: 'Having been in the industry for over several years, we envision global prosperity as well as mutual welfare of both all Nepalese manpower and overseas businesses organization.',
     para4: 'Nepalese professionals are the most pursued in every sector globally, for their intellectual, technical, physical and adaptive abilities. And when it comes to outsourcing manpower',
     para5: 'I would like to assure reliability and accuracy.',
-    para6: 'Thank You. Chandra Mani Rai Chairperson'
+    para6 : 'Thanks and regards,',
+    para7: ' Chandra Mani Rai',
+    para8: ' Chairperson',
   },
   {
     path: '/our-company/managing-director',
@@ -82,7 +85,9 @@ const dropdownData = [
     para3: `We always consider the fact that the human potential should be utilized to the maximum extent for the betterment of the world. Hence, our priority is always to bridge up the opportunities and the human resources. In short, we undertake the responsibility to provide the right worker for the right job.`,
     para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits.`,
     para5:`Assuring you of quality services.`,
-    para6 : `Harka Mani Rai Executive Director`
+    para6 : 'Thanks and regards,',
+    para7 : `Harka Mani Rai`,
+    para8: 'Executive Director',
   },
   {
     path: '/our-company/intl-marketing-director',
@@ -91,7 +96,10 @@ const dropdownData = [
     para2: 'It is great pleasure to introduce ourselves as a specialist in the field of Manpower Recruiting. we are here for you to give the best of human work force, Whether our candidates with previous overseas employment experience, or those entering into overseas assignments or the first time, we ensure theyre available at the most competitive pay scales, and yet prepared in every which way to deliver maximum efficiency. Even our continual expansion in workforce and client base cannot deter our commitment to you, or compel us to compromise on our quality.',
     para3: 'Having ingenious quality, we built a glorious reputation providing a total co-operations & services to our valued & respected clients promptly, efficiently, and providing more workers as required by the principal. We always keep our clients interest in the highest priority in order to place the workers. We used to recruit manpower as professionals, Highly Skilled, Skilled, Semi-Skilled, Unskilled workers having knowledge of English & Hindi speaking within shortest possible time as required.',
     para4: 'You may contact us on any business day for any inquisition regarding the further information about our organization and services.',
-    para5: `Sanju B.K. Int'l Marketing Director`
+    para5: ``,
+    para6: `Thanks and regards`,
+    para7: `Sanju B.K.`,
+    para8: `Int'l Marketing Director`
   },
   {
     path : '/our-company/managing-director',
@@ -100,7 +108,10 @@ const dropdownData = [
     para2: `We aim to make the right assimilation of the two parties and have the progressive initiation for the betterment of an individual and company. Hovering to quarries and information may deprive the reality and lacks the reliability, so, Link Star Manpower goes so closely to every intuition and acts accordingly.`,
     para3: `We have established Help Desk, Public Relation Desk, Quarries Desk that address to the people directly. Our Website helps the clients abroad to know about us and Nepalese workers. Likewise, management is always eager to deal on the different issues with clients. As our success is closely related with our well-wisher, clients and the employee candidate we are always ready to co-ordinate with deep respect and responsibility. With experience of many years in the best Manpower from Nepal, I want to assure for quality services.`,
     para4:`Thank you for your business`,
-    para5: `Durga Mani Rai Managing Director`
+    para5: ``,
+    para6: `Thanks and regards`,
+    para7: `Durga Mani Rai`,
+    para8: `Managing Director`,
     
   },
  {
@@ -109,7 +120,11 @@ const dropdownData = [
   para1 : `Greetings Employers,`,
   para2: `It gives us great pleasure to introduce ourselves as a manpower recruiting expert. We are here to provide you with the best human work force. Whether our candidates have had prior overseas employment experience or are taking on their first overseas assignment, we make sure they are readily available at the most competitive pay scales while also being fully prepared to provide the highest level of efficiency. Even the constant growth of our staff and clientele cannot break our commitment to you or force us to lower our standards. Having brilliant quality, we established a prestigious reputation by offering our esteemed and respected clients complete cooperation and services swiftly, effectively and by delivering extra workers as needed by the main. When placing the employees, we always put the needs of our clients first. When needed, we used to quickly hire professionals, highly skilled workers, skilled workers, semi-skilled workers, and unskilled individuals who could speak Hindi and English.`,
   para3: `Any business day, you are welcome to get in touch with us if you have any questions about our company or our services.`,
-  para4: `Marketing Officer Ratna Bahadur Adhikari`
+  para4: ` `,
+  para5: ``,
+  para6: 'Thanks and regards',
+  para7: `Ratna Bahadur Adhikari`,
+  para8: `Marketing Officer`
  },
  {
   path : `/our-company/general-manager`,
@@ -118,7 +133,10 @@ const dropdownData = [
   para2 : `We are confident and Positive of fulfilling every aspects of recruitment with promising results. We stand by every averment we make in regards to how perfectly Nepalese professionals can enhance your organizations functioning and productivity. Nepalese professionals are the most pursued in every sector globally, for their intellectual, technical, physical and adaptive abilities. And when it comes to outsourcing manpower, we're the first and often the only company, which off-shore employers as well Nepalese professionals find dependable enough.`,
   para3: `I would like to assure on the reliability and accuracy on us.`,
   para4: `Thank You`,
-  para5: `General Manager Padam Sundar Rai`
+  para5: ``,
+  para6: `Thanks and regards`,
+  para7: `Padam Sundar Rai`,
+  para8: `General Manager `,
  },
  {
   path : '/our-company/BOD',
@@ -128,7 +146,8 @@ const dropdownData = [
   para3 : `We always consider the fact that the human potential should be utilized to the maximum extent for the betterment of the world. Hence, our priority is always to bridge up the opportunities and the human resources. In short, we undertake the responsibility to provide the right worker for the right job.`,
   para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits`,
   para5: `Assuring you of quality services.`,
-  para6: `ANG DAWA SHERPA`,
+  para6: `Thanks and regards`,
+  para7 : `ANG DAWA SHERPA`
  },
 
 
@@ -197,7 +216,6 @@ const App = () => {
     AOS.init({ duration: 1000 }); // You can adjust the duration as needed
   }, []); // This runs once on component mount
 
-
   return (
     <Router>
       <Routes>
@@ -208,6 +226,7 @@ const App = () => {
           <Route path='/why-us' element={<WhyUs />} />
           <Route path='/demands' element={<Vacency />} />
           <Route path='/apply-now' element={<ApplyNow />} />
+          <Route path='/our-business-partner' element={<OurBusinessPartner/>}/>
 
           {/* Render DropdownData components */}
           {dropdownData.map(({ path, heading, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10 }) => (
@@ -217,7 +236,6 @@ const App = () => {
           <Route path='/dashboard/admin' element={<AdminDashboard />}>
             <Route path='/dashboard/admin/createVacency' element={<CreateVacency/>} />
             <Route path='/dashboard/admin/contactData' element={<ContactData/>} />
-
         
           </Route>
         </Route>
