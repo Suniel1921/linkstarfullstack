@@ -36,7 +36,7 @@ const Footer = () => {
           <div className='contact_info'>
             <h3>Contact Info</h3>
             <ul className='links'>
-              <li><p><FaMapMarkerAlt/> samakhusi,Kathmandu,Nepal</p></li>
+              <li><p><FaMapMarkerAlt/>Samakhusi,Kathmandu,Nepal</p></li>
               <li><p><MdEmail/> info@linkstar.com.np</p></li>
               <li><p><FaPhoneAlt/>+97714361490</p></li>
             </ul>
@@ -47,7 +47,7 @@ const Footer = () => {
             <ul className='icons'>
             <Link to="https://www.facebook.com/linkstarmanpowerservices" target="_blank"> <FaSquareFacebook /></Link>
             <Link to="https://www.instagram.com/linkstarmanpower/" target="_blank"> <FaSquareInstagram /></Link>
-              <p><FaTwitterSquare/></p>              
+              {/* <p><FaTwitterSquare/></p>               */}
             </ul>
           </div>
         </div>

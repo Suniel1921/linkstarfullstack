@@ -7,6 +7,7 @@ import Services from '../../components/services/Services';
 import Accordian from '../../components/Banner/accordian/Accordian';
 import Testimonials from '../../components/testimonials/Testimonial';
 
+
 const Home = () => {
   
   return (
